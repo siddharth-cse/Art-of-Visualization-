@@ -15,5 +15,5 @@ y  =  np . array ([ 4 , 6 , 7 , 15 , 13 ])
 
 We need to find a line that is closer to all the points, in other words the sum of the distances from all the points to this line must be minimum. 
 
-<img src="https://github.com/siddharth-cse/Art-of-Visualization-/blob/main/Figure_2.png" width="100" height="100">![plot](https://github.com/siddharth-cse/Art-of-Visualization-/blob/main/Figure_3.png)![plot](https://github.com/siddharth-cse/Art-of-Visualization-/blob/main/Figure_4.png)
+<img src="https://github.com/siddharth-cse/Art-of-Visualization-/blob/main/Figure_2.png" width="500" height="500">![plot](https://github.com/siddharth-cse/Art-of-Visualization-/blob/main/Figure_3.png)![plot](https://github.com/siddharth-cse/Art-of-Visualization-/blob/main/Figure_4.png)
 
