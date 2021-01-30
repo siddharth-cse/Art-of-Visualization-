@@ -4,7 +4,7 @@
 
 
 ## The essence of the algorithm 
-We try and fit a line on a scatter plot of random points. The way the algorithm learns to is where Machine Learning comes in. Fortunately unlike other Machine Learning algorithms, we can see how the model learns to fit this line.  
+It tries to fit a line on a scatter plot of random points. The way the algorithm "learns" is where Machine "Learning" comes in. Fortunately unlike other Machine Learning algorithms, we can see how the model learns to fit this line.  
 ## Working of Linear Regression with an example
 Given a any random data set which has a set of x and y values, lets try and fit a line through this curve.  
 ```python
