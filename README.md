@@ -41,26 +41,24 @@ So to start off with we can start with 'm' and 'c' initiallized to 0 and start i
 ```python
 
 
-    import  numpy  as  np 
+import  numpy  as  np 
 
-    def  gradient_descent ( x , y ): 
-        m  =  0
-        c  =  0 
-        iterations  =  10000 
-        n  =  only ( x ) 
-        learning_rate  =  0.08 
+def  gradient_descent ( x , y ): 
+    m  =  0
+    c  =  0 
+    iterations  =  10000 
+    n  =  only ( x ) 
+    learning_rate  =  0.08 
+    for  i  in  range ( iterations ): 
+        y_predicted  =  m *  x  +  b 
+        cost  =  ( 1 / n )  *  sum ([ val ** 2  for  val  in  ( y - y_predicted )])       #Cost function equation
+        md  =  - ( 2 / n ) * sum ( x * ( y - y_predicted ))                               #equation 1 
+        bd  =  - ( 2 / n ) * sum ( y - y_predicted )                                      #equation 2
+        m  =  m  -  learning_rate  *  md                                                  #Updating new slope
+        c  =  c -  learning_rate  *  bd                                                   #Updating new Y-intercept
+        print  ( "m {}, b {}, cost {} iteration {}" . format ( m_curr , b_curr , cost ,  i )) 
 
-        for  i  in  range ( iterations ): 
-            y_predicted  =  m *  x  +  b 
-            cost  =  ( 1 / n )  *  sum ([ val ** 2  for  val  in  ( y - y_predicted )]) 
-            md  =  - ( 2 / n ) * sum ( x * ( y - y_predicted ))                               #equation 1 
-            bd  =  - ( 2 / n ) * sum ( y - y_predicted )                                      #equation 2
-            m  =  m  -  learning_rate  *  md                                                  #Updating new slope
-            c  =  c -  learning_rate  *  bd                                                   #Updating new Y-intercept
-            print  ( "m {}, b {}, cost {} iteration {}" . format ( m_curr , b_curr , cost ,  i )) 
-
-'''
-
+```
 
 ![](grad.gif)
 ![](fitting.gif)
