@@ -19,6 +19,7 @@ We need to find a line that is closer to all the points, in other words the sum 
 
 ## Relevant Math 
 So we have the random points <a href="https://www.codecogs.com/eqnedit.php?latex=(x_0,y_0),(x_1,y_1),(x_2,y_2)&space;......&space;(x_n,y_n)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(x_0,y_0),(x_1,y_1),(x_2,y_2)&space;......&space;(x_n,y_n)" title="(x_0,y_0),(x_1,y_1),(x_2,y_2) ...... (x_n,y_n)" /></a>  <br /> 
+
 Now we need to predict a line <a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;mx&space;&plus;&space;c" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;mx&space;&plus;&space;c" title="y = mx + c" /></a>  <br /> <br />
 
 This function below is commonly reffered to as **cost function** or **mean squared error function** (MSE).
