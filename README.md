@@ -34,7 +34,33 @@ Differentiation essentially measures the change in a value with respect to anoth
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;(Cost)}{\partial&space;m}&space;=&space;\frac{2}{N}\sum_{i=0}^{N}-x_i(y_i-(m*x_i&plus;c))^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;(Cost)}{\partial&space;m}&space;=&space;\frac{2}{N}\sum_{i=0}^{N}-x_i(y_i-(m*x_i&plus;c))" title="\frac{\partial (Cost)}{\partial m} = \frac{2}{N}\sum_{i=0}^{N}-x_i(y_i-(m*x_i+c))^2" /></a> ........ (1)
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;(Cost)}{\partial&space;m}&space;=&space;\frac{2}{N}\sum_{i=0}^{N}-(y_i-(m*x_i&plus;c))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;(Cost)}{\partial&space;m}&space;=&space;\frac{2}{N}\sum_{i=0}^{N}-(y_i-(m*x_i&plus;c))" title="\frac{\partial (Cost)}{\partial m} = \frac{2}{N}\sum_{i=0}^{N}-(y_i-(m*x_i+c))" /></a>        
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\partial&space;(Cost)}{\partial&space;m}&space;=&space;\frac{2}{N}\sum_{i=0}^{N}-(y_i-(m*x_i&plus;c))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;(Cost)}{\partial&space;m}&space;=&space;\frac{2}{N}\sum_{i=0}^{N}-(y_i-(m*x_i&plus;c))" title="\frac{\partial (Cost)}{\partial m} = \frac{2}{N}\sum_{i=0}^{N}-(y_i-(m*x_i+c))" /></a>         ........... (2)
+
+So to start off with we can start with 'm' and 'c' initiallized to 0 and start iterating to solve our cost function equation. 
+
+'''python
+
+
+import  numpy  as  np 
+
+def  gradient_descent ( x , y ): 
+    m  =  0
+    c  =  0 
+    iterations  =  10000 
+    n  =  only ( x ) 
+    learning_rate  =  0.08 
+
+    for  i  in  range ( iterations ): 
+        y_predicted  =  m *  x  +  b 
+        cost  =  ( 1 / n )  *  sum ([ val ** 2  for  val  in  ( y - y_predicted )]) 
+        md  =  - ( 2 / n ) * sum ( x * ( y - y_predicted ))                               #equation 1 
+        bd  =  - ( 2 / n ) * sum ( y - y_predicted )                                      #equation 2
+        m  =  m  -  learning_rate  *  md                                                  #Updating new slope
+        c  =  c -  learning_rate  *  bd                                                   #Updating new Y-intercept
+        print  ( "m {}, b {}, cost {} iteration {}" . format ( m_curr , b_curr , cost ,  i )) 
+
+'''
+
 
 ![](grad.gif)
 ![](fitting.gif)
