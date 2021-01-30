@@ -28,7 +28,7 @@ This function below is commonly reffered to as **cost function** or **mean squar
 ![](https://github.com/siddharth-cse/Art-of-Visualization-/blob/main/Figure_5.png)
 Beautiful isnt it?
 
-Now we must narrow down to an otimal value of 'c' and 'm' such that they have the least corresponding cost in the above 3d graph, we call this optimal value as 'minima'. We could point to some random value by looking at the graph, unfortunately we must make the machine learn to solve this. 
+Now we must narrow down to an optimal value of 'm' and 'c' such that they have the least corresponding cost in the above 3d graph, we call this optimal value as 'minima'. We could point to some random value by looking at the graph, unfortunately we must make the machine learn to solve this. 
 
 ## Gradient Descent 
 <br /> There exist this optimaztion algorithm know as **Gradient Descent**,and its sole purpose of existence is to determine this very value we require. (**Google:** Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function). Now lets get back to our function  ...   <br /><br />
