@@ -59,7 +59,7 @@ def  gradient_descent ( x , y ):
         print  ( "m {}, b {}, cost {} iteration {}" . format ( m_curr , b_curr , cost ,  i )) 
 
 ```
-The above learning rate decides the steps to jump in order to find a local minima. Greater the learning rate, bigger the jumps. (Having a smaller learning rate will ensure finding a fine grained optimum value but may take more iterations). The iterations above in machine learning terms is known as en **'epoch'**.
+The above learning_rate decides the order in which the values 'm' and 'c' should jump in order to find a local minima. Greater the learning rate, larger the jump. (Having a smaller learning rate will ensure finding a fine grained optimum value but may take few more iterations). The iterations above in machine learning terms is known as an **'epoch'**.
 
 ![](grad.gif)
 
@@ -67,5 +67,5 @@ The above animation shows how the gradient descent algorithm converges towards t
  
 ![](fitting.gif)
 
-While the least cost value is determined through the above algorithm we take the correspoding slope(m) and y_itercept(c) value and plot our best fir line iteratively. 
+While the least cost value is determined through the above algorithm we take the correspoding slope(m) and y_itercept(c) value and plot our best fit line iteratively. We observe it saturates after a given number of iterations, suggesting this is the final line which can fit these set of points most optimally. 
 
